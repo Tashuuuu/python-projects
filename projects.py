@@ -466,3 +466,21 @@ while True:
 BMI = kg_weight / (m_height)**2
 
 print("Your Body mass index (BMI) is", round(BMI, 4))
+
+
+
+# 3 Dec 2023: Calculator:
+def add(num1, num2):
+  return num1 + num2
+def multiple(num1, num2):
+  return num1 * num2
+def divide(num1, num2):
+  return num1 / num2
+def subtract(num1, num2):
+  return num1 - num2
+def power(num1, num2):
+  return num1 ** num2
+def calculator(num1, num2, operator):
+  return operator(num1, num2)
+
+calculator(2,4,add)
