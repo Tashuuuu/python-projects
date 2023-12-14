@@ -9,7 +9,7 @@ bill_per_person = (total_bill + tip_money) / no_of_people
 
 print(f'Each person should pay: ${bill_per_person}')
 
-# Code with funtion would be like this:
+# Code with function would be like this:
 # def split_bill():
 #   tip_money = (total_bill * tip) / 100
 #   bill_per_person = (total_bill + tip_money) / no_of_people
