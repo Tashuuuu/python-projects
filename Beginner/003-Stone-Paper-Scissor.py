@@ -20,13 +20,13 @@ while True:
     else:
         print('Computer win🤖')
             
-    playagain =input('Do you want to play again (yes/no): ').lower()
-    if playagain == "yes":
+    play_again =input('Do you want to play again (yes/no): ').lower()
+    if play_again == "yes":
         continue
-    while (playagain != "no" and playagain != "yes"): 
+    while (play_again != "no" and play_again != "yes"): 
         print("Invalid input. Please enter either 'yes' or 'no'.")
-        playagain =input('Do you want to play again (yes/no):').lower()
-        if (playagain == "yes" or playagain == "no"):
+        play_again =input('Do you want to play again (yes/no):').lower()
+        if (play_again == "yes" or play_again == "no"):
             break
-    if playagain == "no":
+    if play_again == "no":
         break
