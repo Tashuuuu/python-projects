@@ -1,11 +1,10 @@
 if __name__ == "__main__":
   while True:
-    print("Welcome to the Adventure Game!")
-    print("As an avid traveller, you have decided to visit the Catacombs of Paris.")
-    print("However, during your exploration, you find yourself lost.")
-    print("You can choose to walk in multiple directions to find a way out.")
-    print("Let's start with your name: ")
-    name = input()
+    print('''Welcome to the Adventure Game!
+    As an avid traveler, you have decided to visit the Catacombs of Paris.
+    However, during your exploration, you find yourself lost.
+    You can choose to walk in multiple directions to find a way out.''')
+    name = input("Let's start with your name: ")
     print("Good luck, " +name+ ".")
     introScene()
 
