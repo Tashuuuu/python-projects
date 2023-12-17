@@ -35,38 +35,38 @@ for a in msg:
 
 
 
-# 2. Stone, paper, scissor:
+# 2. Stone, paper, scissors:
 import random
-choices = ['stone', 'paper', 'scissor']
+choices = ['stone', 'paper', 'scissors']
 while True:
-    computerC = random.choice(choices)
-    userC = input('Enter your choice (stone/paper/scissor): ').lower()
-    if userC =='exit':
+    computer_action = random.choice(choices)
+    user_action = input('Enter your choice (stone/paper/scissors): ').lower()
+    if user_action =='exit':
         break
-    while userC not in choices:
+    while user_action not in choices:
         print('Please enter a valid choice!!')
-        userC = input('enter your choice (stone/paper/scissor): ').lower()
-    print('user:', userC)
-    print('computer:', computerC)
+        user_action = input('enter your choice (stone/paper/scissors): ').lower()
+    print('user:', user_action)
+    print('computer:', computer_action)
 
-    if userC == computerC:
+    if user_action == computer_action:
         print('Its a tie')
-    elif ((userC == 'stone' and computerC == 'scissor')
-            or (userC == 'paper' and computerC == 'stone')
-            or (userC == 'scissor' and computerC == 'paper')):
+    elif ((user_action == 'stone' and computer_action == 'scissors')
+            or (user_action == 'paper' and computer_action == 'stone')
+            or (user_action == 'scissors' and computer_action == 'paper')):
         print('You win🤩!')
     else:
         print('Computer win🤖')
             
-    playagain =input('Do you want to play again (yes/no): ').lower()
-    if playagain == "yes":
+    play_again =input('Do you want to play again (yes/no): ').lower()
+    if play_again == "yes":
         continue
-    while (playagain != "no" and playagain != "yes"): 
+    while (play_again != "no" and play_again != "yes"): 
         print("Invalid input. Please enter either 'yes' or 'no'.")
-        playagain =input('Do you want to play again (yes/no):').lower()
-        if (playagain == "yes" or playagain == "no"):
+        play_again =input('Do you want to play again (yes/no):').lower()
+        if (play_again == "yes" or play_again == "no"):
             break
-    if playagain == "no":
+    if play_again == "no":
         break
 
 
@@ -172,7 +172,7 @@ while True:
     break
   else:
     print("Please enter either 'y' or 'n'.")
-# Following code is to add, edit and delete contacts from the contact book.
+# The following code is to add, edit, and delete contacts from the contact book.
 while True:
   b = input("Enter whether you want to add, edit or delete contact, enter 'n' if nothing: ")
   if b == "add":
@@ -307,7 +307,7 @@ if right_ans != q:
 
 
 
-# 10. Basic Caluculator:
+# 10. Basic Calculator:
 print("NOTE: You can only perform calculatons on 4 numbers!!")
 def sum(a, b, c = 0, d = 0):
   return a + b + c + d
