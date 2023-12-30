@@ -1,4 +1,3 @@
-# 7. Create Contact Book:
 contact = {}
 while True:
   a = input("Do you want to add a contact [y/n]: ")
