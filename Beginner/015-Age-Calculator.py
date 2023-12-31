@@ -1,4 +1,3 @@
-# 8. Age Calculator:
 import time
 this_year = int(time.strftime("%Y"))
 this_month = int(time.strftime("%m"))
