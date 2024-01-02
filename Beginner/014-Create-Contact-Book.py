@@ -14,6 +14,7 @@ while True:
     break
   else:
     print("Please enter either 'y' or 'n'.")
+    
 # The following code is to add, edit, and delete contacts from the contact book.
 while True:
   b = input("Enter whether you want to add, edit or delete contact, enter 'n' if nothing: ")
