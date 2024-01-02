@@ -1,4 +1,3 @@
-# 12. Group Anagrams:
 from collections import defaultdict
 def group_anagrams(a):
   dfdict = defaultdict(list)
