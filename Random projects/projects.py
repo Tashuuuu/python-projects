@@ -33,20 +33,6 @@ while continue_choice == 'yes':
 
 
 
-# 13. Find Missing Number:
-def missing_num(a):
-  b = []
-  for i in range(a[-1]):
-    if i in a:
-      pass
-    else:
-      b.append(i)
-  print("Missing numbers are:", b)
-hi = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14, 15, 16, 17, 25]
-missing_num(hi)
-
-
-
 # 14. Find prime numbers:
 num = int(input("Enter the number you want to check: "))
 div = 2
