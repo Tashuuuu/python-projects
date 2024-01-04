@@ -33,27 +33,6 @@ while continue_choice == 'yes':
 
 
 
-# 15. Print all prime numbers till n:
-n = int(input("Enter the value of n: "))
-num = 3
-prime = []
-while num < n:
-  div = 2
-  while div < num:
-    if num % div == 0:
-      break
-    else:
-      div = div + 1
-    prime.append(num)
-    break
-  num = num + 1
-if (n == 1 or n == 2 or n == 3):
-  print(n, "is prime.")
-elif (n == 0):
-  print("We can't tell whether 0 is prime or not.")
-print(f"All the prime numbers till {n} are {prime}")
-
-
 
 # 16. BMI calculator:
 while True:
