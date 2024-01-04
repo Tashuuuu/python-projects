@@ -1,4 +1,4 @@
-n = int(input("Enter the value of n: "))
+n = int(input("Enter the value of n: ")) # "n" is the number till when you want to count all the prime numbers, like if n = 10 then all the prime numbers would be 2, 3, 5, and 7.
 num = 3
 prime = []
 while num < n:
