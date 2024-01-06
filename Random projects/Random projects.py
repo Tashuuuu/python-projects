@@ -1,19 +1,3 @@
-# Day 1: Email Slicer.
-# In essence, Email Slicer is just a simple tool that will take an email address as input and slice it to produce the username and the
-# domain associated with it. The email must be divided into two strings by using ‘@’ as the separator.
-a = input("Enter your email address: ")
-b = a.split("@")
-print(f"The username is {b[0]} and the domain associated is {b[1]}")
-
-# OR
-
-email = input("Enter Your Email: ").strip()
-username = email[:email.index('@')]
-domain = email[email.index('@') + 1:]
-print(f"Your username is {username} & domain is {domain}")
-
-
-
 # Day 2: Mad Libs Generator
 # The program will ask users to enter a series of inputs that will be considered a Mad Lib. The input could be anything, an adjective,
 # a noun, a pronoun, etc. Once all the inputs are entered, the application will take the data and arrange the inputs into a story 
