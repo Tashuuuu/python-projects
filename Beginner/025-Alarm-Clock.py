@@ -1,13 +1,14 @@
-# Day 4: Alarm Clock 
+# Below is a basic, beginner-level code for an alarm clock.
 import time
 import playsound
 from playsound import playsound
 current_time = time.strftime("%H %M")
-alarm_time = 
-if current_time == "23 42":
-  playsound("Sound.mp3")
+alarm_time = input("Enter the alarm time. Ex [23 00] for 11:00 PM \n")
+print(current_time, alarm_time)
+if current_time == alarm_time:
+  playsound('Sound.mp3')
 
-# OR
+# The following code is intermediate-level code for an alarm clock.
 
 from datetime import datetime
 from playsound import playsound
