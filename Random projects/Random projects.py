@@ -64,65 +64,6 @@ while True:
 
 
 
-# 19 Sept 2023: Python Hangman Game:
-word = "hey"
-turns = 5
-right_ans = set()
-all_ans = ""
-print(f"Guess the correct word. It has {len(word)} letters.")
-while turns > 0:
-  ask = input("Guess a character: ")
-  all_ans += ask
-  for i in word:
-    if i in all_ans:
-      print(i, end = " ")
-      right_ans.add(i)
-    else:
-      print("_", end = " ")
-  if ask not in word:
-    turns = turns - 1
-    print("\nWrong guess!")
-    print(f"You have {turns} attempts left.")
-  if turns == 0:
-    break
-  if right_ans == (q:=set(word)):
-    print(f"\nThe word was \'{word}\'. You guessed it right.")
-    print("Yay!\nYou won!")
-    break
-if right_ans != q:
-  print("You lost.")
-
-# The above code is mine with a few alterations and complete understanding. Create it with scratch but used below code to understand. Took me two days. But I'm happy to finish it.
-# OR
-
-name = input("What is your name?")
-print ("Hello, " + name, "\nTime to play hangman!")
-word = ("secret")
-guesses = ""
-turns = 10
-failed = 0 # Make a counter that starts with zero.
-while turns > 0:
-  for char in word: # for every character in secret_word
-    if char in guesses: # see if the character is in the players guess
-      print (char, end=" ") # print then out the character
-    else:
-      print ("_", end=" ") # if not found, print a dash
-      failed += 1 # and increase the failed counter with one
-  if failed == 0:
-    print ("You won")
-    break
-  guess = input("guess a character: ") # ask the user to guess a character
-  guesses += guess # set the players guess to guesses
-  if guess not in word: # if the guess is not found in the secret word
-    turns -= 1 # turns counter decreases with 1 (now 9)
-    print ("Wrong")
-    print ("You have", + turns, 'guesses left.') # how many turns are left
-    if turns == 0:
-      print ("You Lose!")
-print(word)
-
-
-
 # 21 Sept 2023: Basic Caluculator:
 print("NOTE: You can only perform calculatons on 4 numbers!!")
 while True:
