@@ -212,20 +212,6 @@ print("Your name is", h)
 
 
 
-# 23 Sep 2023: Group Anagrams: Anagrams are words formed by rearranging the letters of another word, For example, car and arc, cat and act, etc.
-from collections import defaultdict
-def group_anagrams(a):
-  dfdict = defaultdict(list)
-  for i in a:
-    sorted_i = " ".join(sorted(i))
-    dfdict[sorted_i].append(i)
-  return dfdict.values()
-words = ["tea", "eat", "bat", "ate", "arc", "car"]
-# words = ["pin", "nip", "ant", "tan", "abc", "cab"]
-print(group_anagrams(words))
-
-
-
 # 24 Sep 2023: Find Missing Number: Given an array containing a range of numbers from 0 to n with a missing number, find the missing number in the input array.
 import random
 a = []
