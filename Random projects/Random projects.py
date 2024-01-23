@@ -247,47 +247,6 @@ missing_num(hi)
 
 
 
-# 25 Sep 2023: Grouping elements of the same indices: Means grouping elements of two or more data structures according to their indices.
-
-lisp = [1, 22, "Hey", "Hello", "Hi", 11, True, (2, 43, 33, 71), ["Yo", False, 42, 90], 98.9, 65.6]
-string = []
-boolean = []
-decimal = []
-tuplee = []
-lis = []
-integer = []
-for i in lisp:
-  if type(i) == str:
-    string.append(i)
-  elif type(i) == bool:
-    boolean.append(i)
-  elif type(i) == float:
-    decimal.append(i)
-  elif type(i) == tuple:
-    tuplee.append(i)
-  elif type(i) == list:
-    lis.append(i)
-  elif type(i) == int:
-    integer.append(i)
-final = [string, boolean, decimal, tuplee, lis, integer] 
-print(final) 
-
-# OR I didn't understand this question so I built what I thought it meant.
-
-inputLists = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
-outputLists = []
-index = 0
-
-for i in range(len(inputLists[0])):
-    outputLists.append([])
-    for j in range(len(inputLists)):
-        outputLists[index].append(inputLists[j][ index])
-    index = index + 1
-a, b, c = outputLists[0], outputLists[1], outputLists[2]
-print(a, b, c)
-
-
-
 # 27 sep 2023: Decode: Decode a msg with key = -2. 
 q = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj"
 alph = "abcdefghijklmnopqrstruwxyz"
