@@ -275,7 +275,7 @@ def trans(a):
   print(listToString(output))
 trans(q)
 
-# I did it with basic coding and it took me around 2 hours and it can't work for any key. But I'm still happy that I code it. I was super fun and challenging. I'm proud of myself ^^
+# I did it with basic coding and it took me around 2 hours and it can't work for any key. But I'm still happy that I code it. It was super fun and challenging. I'm proud of myself ^^
 
 
 
