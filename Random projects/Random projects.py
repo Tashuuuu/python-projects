@@ -189,14 +189,6 @@ while True:
 
 
 
-# 22 Sep 2023: Word Counter: Develop a program that counts the number of words in a given text input.
-text = input("Enter you text: ")
-word = text.split()
-print(f"Your given text is \'{text}\'")
-print(f"The number of words in your given text is {len(word)}")
-
-
-
 # 23 Sep 2023: Random Name Generator: Create a tool that generates random names by combining syllables or using a predefined list of first and last names.
 import random
 a = "aeious"
